@@ -1,5 +1,5 @@
 # Weather Dashboard❄️
-Random password generator including different variation preferences such as capital letters, lowercase, numbers &amp; special characters. 
+Weather dashboard app to view different analytics pertaining to weather in cities!  
 
 # Author ✏️
 - Kole Dallam
