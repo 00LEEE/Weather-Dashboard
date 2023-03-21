@@ -1,0 +1,31 @@
+:root 
+    
+.btn-dark {
+margin: 10px 0;
+}
+
+.recentCityBtn {
+display: flex;
+color: white;
+background-color: #292b2c;
+text-align: center;
+width: 94%;
+justify-content: center;
+border-radius: 5px;
+margin-bottom: 5px;
+}
+    
+.recent-city {
+margin-top: 20px;
+}
+    
+#future-forecast {
+padding-bottom: 8rem;
+}
+    
+#card-container {
+padding-top: 8rem;
+display: flex;
+justify-content: center;
+align-items: center;
+}
