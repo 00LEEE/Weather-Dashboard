@@ -13,7 +13,7 @@ Random password generator including different variation preferences such as capi
 - I had some syntax errors that took me a bit to identify.
 - dealing with localstorage hasn't been too fun for me but this assignment helped me more than others have.
 
-![Alt text](https://imgur.com/Kb754DG)
+![Alt text](https://i.imgur.com/Kb754DG.png)
 
 Deployed website: 
 
