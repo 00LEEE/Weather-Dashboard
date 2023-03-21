@@ -41,3 +41,25 @@ function getCity(cityName) {
           </div>
         `);
       });
+
+      fetch(fiveDayUrl)
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+      const fiveDayData = data.list;
+      const fiveDate1 = fiveDayData[6].dt_txt;
+      const fiveTemp1 = fiveDayData[6].main.temp;
+      const fiveHumidity1 = fiveDayData[6].main.humidity;
+      const fiveWind1 = fiveDayData[6].wind.speed;
+      const fiveIcon1 = fiveDayData[6].weather[0].icon;
+      $("#card1").html(`
+        <h5 class="card-title text-center" id="day1">${fiveDate1}</h5>
+        <p class="card-subtitle text-center mb-2" id="day1-temp">Temperature: ${fiveTemp1}</p>
+        <p class="card-subtitle text-center mb-2" id="day1-wind">Wind Speed: ${fiveWind1}</p>
+        <p class="card-subtitle text-center mb-2" id="day1-humidity">Humidity: ${fiveHumidity1}</p>
+        <div class="text-center">
+          <img class="justify-content-center" id="current-logo" src="http://openweathermap.org/img/wn/${fiveIcon1}@2x.png">
+        </div>
+      `);
+
+      const fiveDate2 = fiveDayData
