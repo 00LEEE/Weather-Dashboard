@@ -16,3 +16,23 @@
   <span class="navbar bg-dark justify-content-center border border-2 border-white text-white">
     <h1 class="display-3">Weather!<img src="./assets/images/weather-icon.png"></h1>
   </span>
+
+  <!--Search Column-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4 bg-secondary border border-2 border-light text-white text-center">
+        <h3 class="citySearchBar">Search for a City:</h3>
+        <div class="form">
+          <input class="form-control" placeholder="Search for a City!" type="text" id="searchedCity"/>
+          <button class="btn btn-dark w-100" id="citySearchBtn">Search</button>
+        </div>
+
+          <!-- Recently Searched Cities -->
+          <div class="container-fluid text-white" id="recentlySearched">
+            <br>
+            <h3 class="text-center">Recently Searched Cities:</h3>
+            <div class="card" id="citySearchCard">
+              <ul class="recent-city" id="recent-city"></ul>
+            </div>
+          </div>
+        </div>
