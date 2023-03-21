@@ -63,3 +63,5 @@ function getCity(cityName) {
       `);
 
       const fiveDate2 = fiveDayData
+    })
+  }
