@@ -65,3 +65,18 @@ function getCity(cityName) {
       const fiveDate2 = fiveDayData
     })
   }
+
+  function generateRecentCities(cities) {
+    const recentList = $("#recentCities");
+    recentList.empty();
+    for (let i = cities.length - 1; i >= 0; i--) {
+      const city = cities[i];
+      const li = $("<li>");
+      li.addClass("list-group-item");
+      li.text(city);
+      li.on("click", () => {
+        getCity(city);
+      });
+      recentList.append(li);
+    }
+  }
